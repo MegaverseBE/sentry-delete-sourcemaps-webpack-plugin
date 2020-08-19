@@ -1,6 +1,6 @@
 # delete-sourcemap-webpack-plugin
 
-delete source map url and files after uploaded to anywhere
+delete source map files after uploaded to sentry or anywhere
 
 ```javascript
 // webpack.config.js

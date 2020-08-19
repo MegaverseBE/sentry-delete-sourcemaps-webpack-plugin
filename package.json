@@ -1,24 +1,24 @@
 {
-  "name": "delete-sourcemap-webpack-plugin",
-  "version": "1.0.1",
-  "description": "delete source map url and files after uploaded to anywhere",
+  "name": "sentry-extra-delete-sourcemap-webpack-plugin",
+  "version": "0.0.1",
+  "description": "delete source map url and files after uploaded to sentry",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zoexx/delete-sourcemap-webpack-plugin.git"
+    "url": "git+https://github.com/121595113/sentry-extra-delete-sourcemap-webpack-plugin.git"
   },
   "keywords": [
     "source",
     "map",
     "webpack"
   ],
-  "author": "zoeying",
+  "author": "Y3O",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zoexx/delete-sourcemap-webpack-plugin/issues"
+    "url": "https://github.com/121595113/sentry-extra-delete-sourcemap-webpack-plugin/issues"
   },
-  "homepage": "https://github.com/zoexx/delete-sourcemap-webpack-plugin#readme"
+  "homepage": "https://github.com/121595113/sentry-extra-delete-sourcemap-webpack-plugin#readme"
 }
