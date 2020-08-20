@@ -1,6 +1,6 @@
 {
   "name": "sentry-extra-delete-sourcemap-webpack-plugin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "delete source map files after uploaded to sentry",
   "main": "index.js",
   "scripts": {
