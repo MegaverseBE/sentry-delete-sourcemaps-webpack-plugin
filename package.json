@@ -15,7 +15,7 @@
     "map",
     "webpack"
   ],
-  "author": "Y3O",
+  "author": "TheDoctor0",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/MegaverseBE/sentry-delete-sourcemaps-webpack-plugin/issues"
