@@ -1,26 +1,32 @@
 class DeleteSourceMapsWebpackPlugin {
-  constructor () {}
+    constructor () {}
 
-  apply (compiler) {
-    compiler.hooks.done.tap('DeleteSourceMapsWebpackPlugin', (stats) => {
-      const fs = require('fs');
-      let countMatchMapAssets = 0;
+    apply (compiler) {
+        compiler.hooks.done.tap('DeleteSourceMapsWebpackPlugin', (stats) => {
+            try {
+                const path = require('path');
+                const fs = require('fs');
+                const { compilation } = stats;
+                const outputPath = compilation.outputOptions.path;
+                const sourcemapFileCount = Object
+                    .keys(compilation.assets)
+                    .filter((filename)=>/[a-zA-Z0-9-]\.(js|css)\.map$/.test(filename))
+                    .map((filename)=>{
+                        if (!outputPath) {
+                            return;
+                        }
 
-      Object
-        .keys(stats.compilation.assets)
-        .filter(name => /\.js\.map$/.test(name))
-        .forEach((name) => {
-          countMatchMapAssets += 1;
-          const { existsAt } = stats.compilation.assets[name];
+                        const filePath = path.join(outputPath, filename);
 
-          if (existsAt) {
-           fs.unlinkSync(existsAt);
-          }
+                        fs.unlinkSync(filePath);
+                    }).length;
+
+                console.log(`⭐⭐⭐ Deleted ${sourcemapFileCount} source map files ⭐⭐⭐`);
+            } catch (exception) {
+                console.log(exception);
+            }
         })
-
-      console.log(`⭐⭐⭐deleted map file: ${countMatchMapAssets} asset(s) processed`);
-    })
-  }
+    }
 }
 
 module.exports = DeleteSourceMapsWebpackPlugin;
