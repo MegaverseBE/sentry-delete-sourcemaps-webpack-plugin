@@ -1,6 +1,6 @@
 {
   "name": "sentry-extra-delete-sourcemap-webpack-plugin",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "delete source map files after uploaded to sentry",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/121595113/sentry-extra-delete-sourcemap-webpack-plugin.git"
+    "url": "git+https://github.com/MegaverseBE/sentry-extra-delete-sourcemap-webpack-plugin.git"
   },
   "keywords": [
     "source",
@@ -18,7 +18,7 @@
   "author": "Y3O",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/121595113/sentry-extra-delete-sourcemap-webpack-plugin/issues"
+    "url": "https://github.com/MegaverseBE/sentry-extra-delete-sourcemap-webpack-plugin/issues"
   },
-  "homepage": "https://github.com/121595113/sentry-extra-delete-sourcemap-webpack-plugin#readme"
+  "homepage": "https://github.com/MegaverseBE/sentry-extra-delete-sourcemap-webpack-plugin#readme"
 }
