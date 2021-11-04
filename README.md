@@ -1,23 +1,23 @@
-# delete-sourcemap-webpack-plugin
+# Sentry Delete Sourcemaps Webpack Plugin
 
-delete source map files after uploaded to sentry or anywhere
+Delete source map files after upload to Sentry.
 
-## 安装
+## Installation
 
 ```bash
-npm i sentry-extra-delete-sourcemap-webpack-plugin -D
+npm i sentry-delete-sourcemaps-webpack-plugin -D
 ```
 
-## 使用
+## Configuration
 
 ```javascript
 // webpack.config.js
-const DeleteSourceMapWebpackPlugin = require('sentry-extra-delete-sourcemap-webpack-plugin')
+const DeleteSourceMapsWebpackPlugin = require('sentry-delete-sourcemaps-webpack-plugin')
 
 module.exports = {
     // ...
     plugins: [
-        new DeleteSourceMapWebpackPlugin()
+        new DeleteSourceMapsWebpackPlugin()
     ],
     // ...
 }
